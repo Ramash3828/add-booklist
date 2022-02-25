@@ -25,7 +25,6 @@ function addBook(book) {
 // Get data from input field
 document.getElementById('btn').addEventListener('click', function() {
 
-    let title1 = document.getElementById('title');
     let title = document.getElementById('title').value;
     let author = document.getElementById('author').value;
     let price = document.getElementById('price').value;
@@ -33,7 +32,7 @@ document.getElementById('btn').addEventListener('click', function() {
     let book = [title, author, price];
 
     if (title != "" && author != "" && price != "") {
-        console.log(index.value)
+      
         if (index == "" || index == undefined) {
             books.push(book);
 
